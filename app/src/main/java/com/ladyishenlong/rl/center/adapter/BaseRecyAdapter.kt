@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import butterknife.ButterKnife
-import com.ladyishenlong.rl.center.annotation.Layout2
+import com.ladyishenlong.rl.center.annotation.Layout
 
 abstract class BaseRecyAdapter<T>(context: Context, datas: List<T>?) : RecyclerView.Adapter<BaseViewHolder>() {
 
@@ -26,10 +26,10 @@ abstract class BaseRecyAdapter<T>(context: Context, datas: List<T>?) : RecyclerV
     private fun setLayout() {
         val clazz = this.javaClass
         if (clazz.getAnnotations() != null) {
-            if (clazz.isAnnotationPresent(Layout2::class.java)) {
-                val layout2 = clazz.getAnnotation(Layout2::class.java)
-                if (layout2.value != -1) {
-                    layoutId = layout2.value
+            if (clazz.isAnnotationPresent(Layout::class.java)) {
+                val layout = clazz.getAnnotation(Layout::class.java)
+                if (layout.value != -1) {
+                    layoutId = layout.value
                 }
             }
         }

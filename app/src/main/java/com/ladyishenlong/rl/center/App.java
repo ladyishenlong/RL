@@ -7,6 +7,8 @@ import com.apkfuns.logutils.LogUtils;
 import com.ladyishenlong.rl.center.config.AppConfig;
 import com.ladyishenlong.rl.center.internet.Internet;
 
+import java.util.List;
+
 public class App extends Application {
 
 
@@ -28,6 +30,7 @@ public class App extends Application {
 
 
         Internet.INSTANCE.init();
+
 
     }
 }

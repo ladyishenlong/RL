@@ -7,6 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * 适合activity使用
+ * 使用recylerview
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
