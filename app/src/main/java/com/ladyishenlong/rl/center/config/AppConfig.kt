@@ -4,7 +4,7 @@ object AppConfig {
 
     const val isRelease: Boolean = false
 
-    //姬长信api
-    const val BASE_URL:String="https://api.isoyu.com/"
+
+    const val BASE_URL:String="http://192.168.1.104:9001/"
 
 }

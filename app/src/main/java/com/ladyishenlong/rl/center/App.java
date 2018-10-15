@@ -28,7 +28,6 @@ public class App extends Application {
         ARouter.init(this);
 
 
-
         Internet.INSTANCE.init();
 
 
